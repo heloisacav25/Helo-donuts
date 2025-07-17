@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+--primaria: #F8E2E3;
+--secundaria: #551F02;
+--tom-1: #FBBAAE;
+
+}
+
+
+section {
+height: 100svh;
+width: 100%;
+padding: 64px 32px;
+
+display: flex;
+flex-direction: column;
+overflow: hidden;
+position: relative;
+
+}
+
+/* modelo chat */
+/* seção do video e logo */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* altura da tela toda */
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* atrás de tudo */
+}
+
+.logo-container {
+  position: relative;
+  z-index: 1; /* na frente do vídeo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* centraliza verticalmente */
+}
+
+.logo-container img {
+  width: 400px; /* ajuste conforme seu design */
+
+}
+
+
+
+/* Donuts favoritos */
+.donuts-section {
+  background: #fce2e7;
+  padding: 60px 20px;
+  font-family: 'Comfortaa', cursive;
+  color: #000;
+  text-align: left;
+}
+
+.donuts-section h2 {
+  font-family: 'Coiny', cursive;
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.donut-card {
+  position: relative;
+  max-width: 340px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Fundo tipo "degradê com elipses desfocadas" */
+.donut-img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.donut-img-container::before {
+  content: '';
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, #fdd9a0 0%, transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.donut-img {
+  width: 220px;
+  position: relative;
+  z-index: 1;
+}
+
+.donut-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'Coiny', cursive;
+  margin-bottom: 8px;
+}
+
+.donut-info p {
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+.arrow-btn {
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 36px;
+  color: #7a4a34;
+  cursor: pointer;
+}
