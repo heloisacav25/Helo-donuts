@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- 
-<link href="https://fonts.googleapis.com/css2?family=Coiny&family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/modernize" rel="stylesheet" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Comfortaa:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
- <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helo Donuts</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- modelo chat -->
- <!-- seção do video e logo -->
-<header class="hero-section">
-  <video autoplay muted loop playsinline class="bg-video">
-    <source src="assets/fundo.mp4" type="video/mp4" />
-    Seu navegador não suporta vídeo.
-  </video>
+    <!-- ---------------->
+    <!-- seção do video e logo -->
+    <!-- ---------------->
+    <header class="hero-section">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="assets/fundo.mp4" type="video/mp4" />
+        Seu navegador não suporta vídeo.
+      </video>
 
-  <div class="logo-container">
-    <img src="assets/logo.png" alt="Logo" />
-  </div>
-</header>
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo" />
+      </div>
+    </header>
 
+    <!-- ---------------->
+    <!-- seçao donuts  -->
+    <!-- ---------------->
+    <section class="donuts-section">
+      <h2>
+        Donuts <br />
+        favoritos
+      </h2>
 
+      <div class="donut-card">
+        <div class="donut-img-container">
+          <img
+            src="assets/amendoim.png"
+            alt="Donut de Amendoim"
+            class="donut-img"
+          />
 
-<section class="donuts-section">
-  <h2>Donuts <br> favoritos</h2>
+          <!-- CIRCULOS -->
+      <div class="circle-container">
+        <div class="circle big-circle"></div>
+        <div class="circle small-circle"></div>
+      </div>
 
-  <div class="donut-card">
-    <div class="donut-img-container">
-      <img src="assets/amendoim.png" alt="Donut de Amendoim" class="donut-img">
-    </div>
+        </div>
 
-    <div class="donut-info">
-      <h3>Amendoim</h3>
-      <p>Massa tradicional com cobertura de chocolate ao leite e granulado de amendoim.</p>
-    </div>
+      
+        <div class="donut-info">
+          <h3>Amendoim</h3>
+          <p>
+            Massa tradicional com cobertura de chocolate ao leite e granulado de
+            amendoim.
+          </p>
+        </div>
+        <button class="arrow-btn"></button>
+      </div>
+      
+    
 
-    <button class="arrow-btn"></button>
-  </div>
-</section>
-
-
-
-
-</body>
+   
+    </section>
+  </body>
 </html>
-
