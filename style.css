@@ -4,6 +4,7 @@
 --primaria: #F8E2E3;
 --secundaria: #551F02;
 --tom-1: #FBBAAE;
+--tom-fundo: #F8E2E3;
 
 }
 
@@ -66,9 +67,9 @@ position: relative;
 
 .donuts-section h2 {
   font-family: 'Coiny', cursive;
-  font-size: 40px;
+  font-size: 45px;
 
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   line-height: 1.1;
   text-align: left;
   font-weight: 900;
@@ -85,24 +86,11 @@ position: relative;
   text-align: left;
 }
 
-/* Fundo tipo "degradê com elipses desfocadas" */
 .donut-img-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
+width: fit-content;
+height: fit-content;
+position: relative;
 
-.donut-img-container::before {
-  content: '';
-  position: absolute;
-  width: 260px;
-  height: 260px;
-  background: radial-gradient(circle, #fdd9a0 0%, transparent 70%);
-  filter: blur(40px);
-  z-index: 0;
 }
 
 .donut-img {
@@ -112,16 +100,18 @@ position: relative;
 }
 
 .donut-info h3 {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
   font-family: 'Coiny', cursive;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
+  
 }
 
 .donut-info p {
-  font-size: 14px;
+  font-size: 20px;
   color: #333;
   font-weight: 300;
+  
 }
 
 .arrow-btn {
@@ -140,11 +130,11 @@ position: relative;
 
 /* CIRCULOS */
 .circle-container {
-  position: relative;
+  position: absolute;
   width: 200px;  /* largura do círculo maior */
   height: 200px; /* altura do círculo maior */
   margin: 0 auto; /* centraliza na página */
-  margin-top: 50px; /* só para dar um espaçamento do topo */
+  
 }
 
 .circle {
@@ -160,7 +150,7 @@ position: relative;
   width: 250px;
   height: 250px;
   background-color: #C97F22; /* rosa claro, muda para a cor que quiser */
-  z-index: 1;
+  z-index: 2;
   opacity: 0.5;
  filter: blur(15px);
 }
@@ -176,8 +166,223 @@ position: relative;
 }
 
 
-
 .translate-y-center {
-  translate: 0 -50%;
+  translate: 15% -50%;
   top: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.monte-o-seu-section {
+ color: #000;
+text-align: center;
+font-family: Coiny;
+font-size: 28px;
+font-style: normal;
+line-height: normal;
+  margin-top: -100px;
+  background-color: var(--tom-fundo);
+
+}
+
+.accordion {
+  background-color: #7a4a2f;
+  color: #fbc0c9;
+  cursor: pointer;
+  padding: 20px 25px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 30px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-family: 'coiny', cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seta {
+  font-size: 18px;
+  color: #fbc0c9;
+  transition: transform 0.3s ease;
+}
+
+/* Se quiser girar a seta quando ativo: */
+.accordion.active .seta {
+  transform: rotate(180deg);
+}
+
+
+.marca-e-contato-section {
+  background-color: var(--tom-fundo);
+
+
+.card-img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid #b28b7e; /* borda fina para destacar */
+}
+
+.card-title {
+  font-family: 'Coiny';
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #000000;
+  text-shadow: 1px 1px 1px #cbb09e;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color:#551F02;
+}
+
+.contato {
+  background-color: #fde2e5; /* rosa claro */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #5c2a19; /* marrom escuro */
+}
+
+.mensagem {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.mensagem strong {
+  font-weight: bold;
+  font-size: 22px;
+  color: #5c2a19;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.botao {
+  background-color: #ffc6c6; /* rosa botão */
+  border: 2px solid #5c2a19;
+  color: #5c2a19;
+  padding: 12px 30px;
+  border-radius: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #f9b5b5;
+}
+
+
+}
+
+
+.mapa-e-rodape-section {
+ 
+background-color: var(--tom-fundo);
+
+.titulo-mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  
+}
+
+.titulo-mapa h2 {
+  font-size: 50px;
+  font-family: 'Coiny';
+  margin: 0;
+}
+
+.donut-img {
+  width: 150px;
+  height: auto;
+}
+
+.mapa-box {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 4px solid var(--secundaria);
+  overflow: hidden;
+}
+
+.mapa-endereco {
+  background-color:var(--secundaria); 
+  color: #fff5eb;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'comfortaa';
+}
+
+
+}
+
+.rodape {
+  font-family: 'comfortaa';
+  background-color: #5c2a0c;
+  color: #f3d6ca;
+  width: 375px;
+  position: relative;
+}
+
+.rodape-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ 
+  flex-wrap: wrap;
+}
+
+.logo-rodape {
+  max-height: 70px;
+  object-fit: contain;
+}
+
+.coluna-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 10px;
+  text-align: left;
+}
+
+.coluna-links a {
+  color: #f3d6ca;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.coluna-links a:hover {
+  color: #f9b5b5;
+}
+
+.rodape-baixo {
+  background-color: #d3a99b;
+  text-align: center;
+  
+  font-size: 14px;
+  color: #5c2a0c;
 }
