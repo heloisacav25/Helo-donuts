@@ -10,11 +10,54 @@
 
     <link rel="stylesheet" href="style.css" />
 
+     <script src="https://unpkg.com/feather-icons"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Helo Donuts</title>
+
   </head>
   <body>
+
+ <dialog class="justify-between">
+      <div role="logo">
+      </div>
+      <nav class="flex flex-col gap-4">
+        <span>
+          <a href="#">Contato</a>
+          <i data-feather="mail"></i>
+        </span>
+        <span>
+          <a href="#">Unidades</a>
+          <i data-feather="map-pin"></i>
+        </span>
+        <span>
+          <a href="#">Donuts</a>
+          <i data-feather="circle"></i>
+        </span>
+        <span>
+          <a href="#">Nossa marca</a>
+        <i data-feather="circle"></i>
+        </span>
+        <span>
+          <a href="#">Home</a>
+          <i data-feather="home"></i>
+        </span>
+
+        <span>
+          <a href="#"></a>
+          <i data-feather="x" onclick="menu.close()"></i>
+        </span>
+      </nav>
+    </dialog>
+
+    <nav class="main flex justify-between items-center">
+      <div role="logo"></div>
+      <i onclick="menu.showModal()" data-feather="menu"></i>
+    </nav>
+
+
+
     <!-- modelo chat -->
     <!-- ---------------->
     <!-- seção do video e logo -->
@@ -33,14 +76,14 @@
     <!------------------->
     <!-- seçao donuts  -->
     <!-- ---------------->
-    <section class="donuts-section">
+    <section class="donuts-section flex gap-4">
       <h2>
         Donuts <br />
         favoritos
       </h2>
 
       <div class="donut-card">
-        <div class="donut-img-container translate-y-center">
+        <div class="donut-img-container ">
           <img
             src="assets/amendoim.png"
             alt="Donut de Amendoim"
@@ -63,6 +106,108 @@
         </div>
         <button class="arrow-btn"></button>
       </div>
+
+
+
+    <swiper-container>
+      
+<swiper-slider>
+  <h2>
+        Donuts <br />
+        favoritos
+      </h2>
+
+      <div class="donut-card">
+        <div class="donut-img-container ">
+          <img
+            src="assets/amendoim.png"
+            alt="Donut de Amendoim"
+            class="donut-img"
+          />
+
+          <!-- CIRCULOS -->
+          <div class="circle-container translate-y-center">
+            <div class="circle big-circle"></div>
+            <div class="circle small-circle"></div>
+          </div>
+        </div>
+
+        <div class="donut-info">
+          <h3>Amendoim</h3>
+          <p>
+            Massa tradicional com cobertura de chocolate ao leite e granulado de
+            amendoim.
+          </p>
+        </div>
+        <button class="arrow-btn"></button>
+      </div>
+</swiper-slider>
+
+<swiper-slider>
+  <h2>
+        Donuts <br />
+        favoritos
+      </h2>
+
+      <div class="donut-card">
+        <div class="donut-img-container ">
+          <img
+            src="assets/amendoim.png"
+            alt="Donut de Amendoim"
+            class="donut-img"
+          />
+
+          <!-- CIRCULOS -->
+          <div class="circle-container translate-y-center">
+            <div class="circle big-circle"></div>
+            <div class="circle small-circle"></div>
+          </div>
+        </div>
+
+        <div class="donut-info">
+          <h3>Amendoim</h3>
+          <p>
+            Massa tradicional com cobertura de chocolate ao leite e granulado de
+            amendoim.
+          </p>
+        </div>
+        <button class="arrow-btn"></button>
+      </div>
+</swiper-slider>
+
+<swiper-slider>
+  <h2>
+        Donuts <br />
+        favoritos
+      </h2>
+
+      <div class="donut-card">
+        <div class="donut-img-container ">
+          <img
+            src="assets/amendoim.png"
+            alt="Donut de Amendoim"
+            class="donut-img"
+          />
+
+          <!-- CIRCULOS -->
+          <div class="circle-container translate-y-center">
+            <div class="circle big-circle"></div>
+            <div class="circle small-circle"></div>
+          </div>
+        </div>
+
+        <div class="donut-info">
+          <h3>Amendoim</h3>
+          <p>
+            Massa tradicional com cobertura de chocolate ao leite e granulado de
+            amendoim.
+          </p>
+        </div>
+        <button class="arrow-btn"></button>
+      </div>
+</swiper-slider>
+
+    </swiper-container>
     </section>
 
     <!------------------------>
@@ -139,7 +284,7 @@
     <!------------------->
     <!-- seção mapa e rodape----->
     <!------------------->
-<section class="mapa-e-rodape-section">
+<section class="mapa-section">
   <div class="titulo-mapa">
     <h2>Mapa</h2>
     <img src="assets/carrinho-donut.png" alt="Donut" class="donut-img"> <!-- Substitua pelo caminho correto -->
@@ -158,31 +303,36 @@
     </div>
   </div>
 </div>
+ </section>
 
-<footer class="rodape">
-  <div class="rodape-topo">
-    <img src="logo.png" alt="Helo Donuts" class="logo-rodape" />
+ 
+ <footer>
+      <div class="flex justify-between items-center">
+        <div>
+          <img src="assets/logo.png" alt="logo">
+        </div>
+        <!-- navegation -->
+        <nav class="flex gap-4 ">
+          <a href="#">Contatos</a>
+          <a href="#">Favoritos</a>
+          <a href="#">Monte o seu</a>
+          <a href="#"> Nossa marca</a>
+          <a href="#">Home</a>
+        </nav>
+      </div>
 
-    <div class="coluna-links">
-      <a href="#">Contato</a>
-      <a href="#">A Marca</a>
-      <a href="#">Donuts favoritos</a>
-    </div>
+      <div class="flex justify-center">
+        <p>© Helo Donuts - Todos os direitos reservados desde 2025</p>
+      </div>
+    </footer>
 
-    <div class="coluna-links">
-      <a href="#">Local</a>
-      <a href="#">Monte o seu</a>
-    </div>
-  </div>
-
-  <div class="rodape-baixo">
-    © Helo Donuts - Todos os direitos reservados desde 2025
-  </div>
-</footer>
-
-
-
-</section>
+<script>
+      feather.replace();
+      // const = constante
+      // menu = nome da variavel
+      const menu = document.querySelector("dialog");
+    </script>
+    
 
 
   </body>
