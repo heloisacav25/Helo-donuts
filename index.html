@@ -20,7 +20,7 @@
   <body>
 
  <dialog class="justify-between">
-      <div role="logo">
+      <div role="logo" ma>
       </div>
       <nav class="flex flex-col gap-4">
         <span>
@@ -108,10 +108,9 @@
       </div>
 
 
-
     <swiper-container>
       
-<swiper-slider>
+<swiper-slide>
   <h2>
         Donuts <br />
         favoritos
@@ -141,9 +140,9 @@
         </div>
         <button class="arrow-btn"></button>
       </div>
-</swiper-slider>
+</swiper-slide>
 
-<swiper-slider>
+<swiper-slide>
   <h2>
         Donuts <br />
         favoritos
@@ -173,9 +172,9 @@
         </div>
         <button class="arrow-btn"></button>
       </div>
-</swiper-slider>
+</swiper-slide>
 
-<swiper-slider>
+<swiper-slide>
   <h2>
         Donuts <br />
         favoritos
@@ -205,9 +204,10 @@
         </div>
         <button class="arrow-btn"></button>
       </div>
-</swiper-slider>
+</swiper-slide>
 
     </swiper-container>
+
     </section>
 
     <!------------------------>
@@ -218,31 +218,48 @@
         monte o <br />
         seu
       </h2>
-
+<div class="container">
       <button class="accordion">
         Massas
         <span class="seta">⌄</span>
       </button>
+<div class="panel">
+    <p>Tradicional (normal ou colorido)<br>Chocolate<br>Morango<br>Cenoura</p>
+  </div>
 
       <button class="accordion">
         Cobertura
         <span class="seta">⌄</span>
       </button>
+<div class="panel">
+    <p>Chocolate ao leite<br>Chocolate branco ou colorido<br>Açucar e canela (empanado).</p>
+  </div>
 
       <button class="accordion">
         Reecheio
         <span class="seta">⌄</span>
       </button>
+<div class="panel">
+    <p>Brigadeiro<br>Bejinho<br>doce de leite </p>
+  </div>
 
       <button class="accordion">
         Granulado
         <span class="seta">⌄</span>
       </button>
+<div class="panel">
+    <p>brigadeiro<br>colorido<br>amendoin<br>coco</p>
+  </div>
 
       <button class="accordion">
         Tamanhos
         <span class="seta">⌄</span>
       </button>
+      <div class="panel">
+    <p>Quantidade por embalagem<br>3un<br>4un<br>8un<br>16un<br>25un<br>+50un (combinar com antecedencia)</p>
+  </div>
+
+      </div>
     </section>
 
     <!------------------->
@@ -285,6 +302,8 @@
     <!-- seção mapa e rodape----->
     <!------------------->
 <section class="mapa-section">
+  
+  </div>
   <div class="titulo-mapa">
     <h2>Mapa</h2>
     <img src="assets/carrinho-donut.png" alt="Donut" class="donut-img"> <!-- Substitua pelo caminho correto -->
@@ -303,6 +322,10 @@
     </div>
   </div>
 </div>
+<div class="texto-mapa">
+    <p>
+      *Endereço apenas para a retirada de pedidos/encomendas*
+    </p>
  </section>
 
  
@@ -334,6 +357,25 @@
     </script>
     
 
+
+
+
+    <script>
+  const accordions = document.querySelectorAll('.accordion');
+
+  accordions.forEach(btn => {
+    btn.addEventListener('click', function () {
+      this.classList.toggle('active');
+
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
+</script>
 
   </body>
 </html>

@@ -178,7 +178,7 @@ section {
   background-color: var(--tom-fundo);
 
   .accordion {
-    background-color: #7a4a2f;
+    background-color:var(--secundaria);
     color: #fbc0c9;
     cursor: pointer;
     padding: 20px 25px;
@@ -204,6 +204,28 @@ section {
   .accordion.active .seta {
     transform: rotate(180deg);
   }
+
+
+.panel {
+  padding: 10px 15px;
+  display: none;
+  background-color:var(--secundaria);
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  
+  color: #FFF;
+
+/* corpo */
+font-family: Comfortaa;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.4px;
+text-align: left;
+}
+
 }
 
 .marca-e-contato-section {
@@ -287,7 +309,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: -38px;
     position: relative;
   }
 
@@ -300,6 +322,7 @@ section {
   .donut-img {
     width: 150px;
     height: auto;
+    margin-top: 60px;
   }
 
   .mapa-box {
@@ -318,10 +341,17 @@ section {
     line-height: 1.4;
     font-family: "comfortaa";
   }
+
+  .texto-mapa {
+    color: var(--marrom-escuro);
+    font-style: bold;
+
+  }
 }
 
 footer {
   color: var(--secundaria);
+  
 
   & img[alt="logo"] {
     width: 102px;
@@ -331,6 +361,8 @@ footer {
   & div:has(nav) {
     background-color: var(--secundaria);
     padding: 16px 32px;
+
+    display: flex;
   }
 
   & div:has(p) {
@@ -338,9 +370,18 @@ footer {
     background-color: color-mix(
       in srgb,
       var(--secundaria) 50%,
-      var(--tom-1) 40%
-    );
+      var(--tom-1) 40%);
+      display: flex;
+      & p {
+        margin-left: 60px;
+      }
   }
+
+  & .nav {
+    margin-left: 50px;
+    display: flex;
+  }
+  
 
   & p,
   a {
@@ -350,6 +391,10 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: 100%; /* 8.64px */
+    margin-left: 80px;
+    
+    
+    
 
     margin: 0;
     opacity: 100;
@@ -358,6 +403,7 @@ footer {
 
   & a:hover {
     color: var(--secundaria);
+    margin-left: 50px
   }
 }
 
@@ -393,8 +439,9 @@ dialog {
   }
 
   & [role="logo"] {
-    width: 96px;
+    
     height: 96px;
+  
   }
 
   & a,
@@ -404,7 +451,23 @@ dialog {
   }
   & nav {
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
   }
+  & .justify-between {
+    justify-content: space-between;
+  }
+
+}
+
+[role="logo"] {
+  width: 160px;
+  height: 160px;
+  background-color: palevioletred;
+  mask: url("assets/logo.png") no-repeat center;
+  mask-size: 100%;
 }
 
 nav.main {
