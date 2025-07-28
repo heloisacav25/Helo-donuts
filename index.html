@@ -10,7 +10,12 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
      <script src="https://unpkg.com/feather-icons"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+     
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,7 +42,7 @@
         </span>
         <span>
           <a href="#">Nossa marca</a>
-        <i data-feather="circle"></i>
+        <i data-feather="star"></i>
         </span>
         <span>
           <a href="#">Home</a>
@@ -56,7 +61,11 @@
       <i onclick="menu.showModal()" data-feather="menu"></i>
     </nav>
 
+<div style="overflow: hidden;">
 
+<img data-aos="fade-up" src="swiper-container">
+
+</div>
 
     <!-- modelo chat -->
     <!-- ---------------->
@@ -82,50 +91,25 @@
         favoritos
       </h2>
 
-      <div class="donut-card">
-        <div class="donut-img-container ">
-          <img
-            src="assets/amendoim.png"
-            alt="Donut de Amendoim"
-            class="donut-img"
-          />
 
-          <!-- CIRCULOS -->
-          <div class="circle-container translate-y-center">
-            <div class="circle big-circle"></div>
-            <div class="circle small-circle"></div>
-          </div>
-        </div>
+  <div class="containerr">
 
-        <div class="donut-info">
-          <h3>Amendoim</h3>
-          <p>
-            Massa tradicional com cobertura de chocolate ao leite e granulado de
-            amendoim.
-          </p>
-        </div>
-        <button class="arrow-btn"></button>
-      </div>
-
-
-    <swiper-container>
+     <swiper-container autoplay speed="3000">
       
 <swiper-slide>
-  <h2>
-        Donuts <br />
-        favoritos
-      </h2>
-
-      <div class="donut-card">
+ 
         <div class="donut-img-container ">
+
+          <div class="mask">
           <img
             src="assets/amendoim.png"
             alt="Donut de Amendoim"
             class="donut-img"
           />
+          </div>
 
           <!-- CIRCULOS -->
-          <div class="circle-container translate-y-center">
+          <div class="circle-container translate-y-center amendoim">
             <div class="circle big-circle"></div>
             <div class="circle small-circle"></div>
           </div>
@@ -139,74 +123,186 @@
           </p>
         </div>
         <button class="arrow-btn"></button>
-      </div>
+  
 </swiper-slide>
 
 <swiper-slide>
-  <h2>
-        Donuts <br />
-        favoritos
-      </h2>
-
-      <div class="donut-card">
+ 
         <div class="donut-img-container ">
+          <div class="mask">
           <img
-            src="assets/amendoim.png"
-            alt="Donut de Amendoim"
+            src="assets/donut-rosa.png"
+            alt="Donut de morango"
             class="donut-img"
           />
+          </div>
 
           <!-- CIRCULOS -->
-          <div class="circle-container translate-y-center">
+          <div class="circle-container translate-y-center Morango">
             <div class="circle big-circle"></div>
             <div class="circle small-circle"></div>
           </div>
         </div>
 
         <div class="donut-info">
-          <h3>Amendoim</h3>
+          <h3>Morango</h3>
           <p>
-            Massa tradicional com cobertura de chocolate ao leite e granulado de
-            amendoim.
+           Massa de sabor morango com cobertura de chocolate rosa e granulado colorido.
           </p>
         </div>
         <button class="arrow-btn"></button>
-      </div>
+      
 </swiper-slide>
 
 <swiper-slide>
-  <h2>
-        Donuts <br />
-        favoritos
-      </h2>
 
-      <div class="donut-card">
+
+    
         <div class="donut-img-container ">
+          <div class="mask">
           <img
-            src="assets/amendoim.png"
-            alt="Donut de Amendoim"
+            src="assets/branco.png"
+            alt="Donut branco"
             class="donut-img"
-          />
+          /></div>
 
           <!-- CIRCULOS -->
-          <div class="circle-container translate-y-center">
+          <div class="circle-container translate-y-center choc-branco">
             <div class="circle big-circle"></div>
             <div class="circle small-circle"></div>
           </div>
         </div>
 
         <div class="donut-info">
-          <h3>Amendoim</h3>
+          <h3>Choc Branco</h3>
           <p>
-            Massa tradicional com cobertura de chocolate ao leite e granulado de
-            amendoim.
+           Massa tradicional com cobertura de chocolate branco e granulado colorido colorido.
           </p>
         </div>
         <button class="arrow-btn"></button>
-      </div>
+     
+</swiper-slide>
+
+<swiper-slide>
+
+
+    
+        <div class="donut-img-container ">
+          <div class="mask">
+          <img
+            src="assets/doce-de-leite.png"
+            alt="Donut de churros"
+            class="donut-img"
+          /></div>
+
+          <!-- CIRCULOS -->
+          <div class="circle-container translate-y-center Churros">
+            <div class="circle big-circle"></div>
+            <div class="circle small-circle"></div>
+          </div>
+        </div>
+
+        <div class="donut-info">
+          <h3>Churros</h3>
+          <p>
+           Massa de churros com recheio de doce de leite e empanado no açucar e canela.
+          </p>
+        </div>
+        <button class="arrow-btn"></button>
+     
+</swiper-slide>
+
+<swiper-slide>
+
+
+    
+        <div class="donut-img-container ">
+          <div class="mask">
+          <img
+            src="assets/brigadeiro.png"
+            alt="Donut de cenoura"
+            class="donut-img"
+          /></div>
+
+          <!-- CIRCULOS -->
+          <div class="circle-container translate-y-center Cenoura">
+            <div class="circle big-circle"></div>
+            <div class="circle small-circle"></div>
+          </div>
+        </div>
+
+        <div class="donut-info">
+          <h3>Cenoura e brigadeiro</h3>
+          <p>
+           Massa de cenoura com recheio de brigadeiro e cobertura de chocolate ao leite com granulado de chocolate.
+          </p>
+        </div>
+        <button class="arrow-btn"></button>
+     
+</swiper-slide>
+
+<swiper-slide>
+
+
+    
+        <div class="donut-img-container ">
+          <div class="mask">
+          <img
+            src="assets/donut-prestigio.png"
+            alt="Donut de Prestigio"
+            class="donut-img"
+          />
+          </div>
+
+          <!-- CIRCULOS -->
+          <div class="circle-container translate-y-center Prestigio">
+            <div class="circle big-circle"></div>
+            <div class="circle small-circle"></div>
+          </div>
+        </div>
+
+        <div class="donut-info">
+          <h3>Prestigio</h3>
+          <p>
+Massa tradicional com cobertura de chocolate ao leite e confeito de coco.          </p>
+        </div>
+        <button class="arrow-btn"></button>
+     
+</swiper-slide>
+
+<swiper-slide>
+
+
+    
+        <div class="donut-img-container ">
+          <div class="mask">
+          <img
+            src="assets/all-choc.png"
+            alt="Donut all choc"
+            class="donut-img"
+          />
+          </div>
+
+          <!-- CIRCULOS -->
+          <div class="circle-container translate-y-center all-choc">
+            <div class="circle big-circle"></div>
+            <div class="circle small-circle"></div>
+          </div>
+        </div>
+
+        <div class="donut-info">
+          <h3>All Choc</h3>
+          <p>
+           Massa de chocolate com recheio de brigadeiro e cobertura de chocolate ao leite com granulado de chocolate.
+          </p>
+        </div>
+        <button class="arrow-btn"></button>
+     
 </swiper-slide>
 
     </swiper-container>
+
+  </div>
 
     </section>
 
@@ -256,7 +352,9 @@
         <span class="seta">⌄</span>
       </button>
       <div class="panel">
-    <p>Quantidade por embalagem<br>3un<br>4un<br>8un<br>16un<br>25un<br>+50un (combinar com antecedencia)</p>
+    <p>Quantidade por embalagem<br><br>
+     <uli></uli> 3un<br>4un<br>8un<br></uli>
+     <uli> 16un<br>25un<br>+50un (combinar com antecedencia)</p></uli>
   </div>
 
       </div>
@@ -268,12 +366,36 @@
     <section class="marca-e-contato-section">
 
       <div class="card">
-  <img 
+        <h2 class="card-title">Nossa marca</h2>
+
+  <div id="marca-slider" role="mask-2">
+    <swiper-container autoplay speed="3000">
+      <swiper-slide>
+<img 
+    src="assets/kit-donuts 1.png" 
+    alt="Donuts" 
+    class="card-img"
+  >
+      </swiper-slide>
+
+      <swiper-slide>
+<img 
+    src="assets/preparo-donuts 1.png" 
+    alt="Donuts" 
+    class="card-img"
+  >
+      </swiper-slide>
+
+      <swiper-slide>
+<img 
     src="assets/foto.png" 
     alt="Donuts" 
     class="card-img"
   >
-  <h2 class="card-title">Nossa marca</h2>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  
   <p class="card-text">
     Nossa marca nasceu da vontade de oferecer algo simples, gostoso e do jeitinho que você quiser. Queremos criar uma experiência leve, doce e criativa e com sabor de aconchego. 
     <br>Um espaço familiar, com um toque inovador, onde cada donut tem um pouco da nossa essência e muito da sua.
@@ -296,8 +418,6 @@
     </section>
 
 
-
-  
     <!------------------->
     <!-- seção mapa e rodape----->
     <!------------------->
@@ -354,6 +474,9 @@
       // const = constante
       // menu = nome da variavel
       const menu = document.querySelector("dialog");
+
+      src="https://unpkg.com/aos@next/dist/aos.js"
+      src="script.js"
     </script>
     
 
@@ -376,6 +499,7 @@
     });
   });
 </script>
+
 
   </body>
 </html>
