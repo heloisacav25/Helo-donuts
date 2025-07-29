@@ -257,6 +257,7 @@ swiper-slide {
   line-height: normal;
   margin-top: -100px;
   background-color: var(--tom-fundo);
+  margin-top: 0px;
 
   .accordion {
     background-color: var(--secundaria);
@@ -391,6 +392,7 @@ swiper-slide {
 
 .mapa-section {
   background-color: var(--tom-fundo);
+  margin-top: 0px;
 
   .titulo-mapa {
     display: flex;
